@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Interactive To Do List</h1>
+
+    <ul id="todo-list">
+      <li onclick="toggleTask(this)">
+        Module 1 challenge
+        <img src="check_icon.png" alt="Completed" class="check-icon" />
+      </li>
+      <li onclick="toggleTask(this)">
+        Module 2 challenge
+        <img src="check_icon.png" alt="Completed" class="check-icon" />
+      </li>
+      <li onclick="toggleTask(this)">
+        Module 3 challenge
+        <img src="check_icon.png" alt="Completed" class="check-icon" />
+      </li>
+      <li onclick="toggleTask(this)">
+        Module 4 challenge
+        <img src="check_icon.png" alt="Completed" class="check-icon" />
+      </li>
+      <li onclick="toggleTask(this)">
+        Module 5 challenge
+        <img src="check_icon.png" alt="Completed" class="check-icon" />
+      </li>
+    </ul>
+
+    <script>
+      // The onClick function that updates the item's state
+      function toggleTask(taskElement) {
+        // Toggle the 'completed' class on the clicked list item
+        taskElement.classList.toggle("completed");
+      }
+    </script>
+  </body>
+</html>
