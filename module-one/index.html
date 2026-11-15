@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Creating the Object to store personal info
+      const person = {
+        name: "Aminu A. Dzara",
+        dateOfBirth: "05-03-1993",
+        nationality: "Nigerian",
+        location: "Adamawa",
+
+        // Using an array data type for hobbies
+        hobbies: ["movies", "music", "learning"],
+
+        // Function that takes year of birth to calculate approximate age
+        calculateAge: function (year) {
+          return 2026 - year;
+        },
+      };
+
+      // Accessing and printing the object properties to the console
+      console.log("Name: " + person.name); // Output: Name: Aminu A. Dzara
+      console.log("DOB: " + person.dateOfBirth); // Output: DOB: 05-03-1993
+      console.log("Nationality: " + person.nationality); // Output: Nationality: Nigerian
+      console.log("Location: " + person.location); // Output: Location: Adamawa
+      console.log("Hobby 1: " + person.hobbies[0]); // Output: Hobby 1: movies
+      console.log("Hobby 2: " + person.hobbies[1]); // Output: Hobby 2: music
+      console.log("Hobby 3: " + person.hobbies[2]); // Output: Hobby 3: learning
+
+      // Calculating and printing age to the console
+      const birthYear = 1993;
+      const age = person.calculateAge(birthYear);
+      console.log("Age : " + age); // Output: Age: 33
+    </script>
+  </body>
+</html>
